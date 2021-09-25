@@ -1,0 +1,32 @@
+.bar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+
+  &-container {
+    background-color: #2ca08b;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    border-radius: 3px;
+
+    &--small {
+      & > * {
+        display: none;
+      }
+    }
+
+    p {
+      color: white;
+      font-size: 18px;
+      margin-top: 10px;
+    }
+
+    &:not(&:last-child) {
+      margin-right: 2px;
+    }
+  }
+}

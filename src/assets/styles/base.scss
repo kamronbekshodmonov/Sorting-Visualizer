@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+$font-openSans: "Open Sans", sans-serif;
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-openSans;
+}
+
+.body {
+  height: 100vh;
+}
+
+.container {
+  max-width: 1300px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.page {
+  height: calc(100vh - 60px - 40px);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  color: rgba(white, 0.6);
+  cursor: not-allowed;
+}
+
+.btn {
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 15px;
+  transition: all 0.6s;
+
+  &:hover {
+    color: rgba(white, 0.6);
+  }
+
+  &--main {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 100px;
+
+    &:hover {
+      background-color: rgb(231, 231, 231);
+      color: black;
+    }
+
+    &:disabled {
+      background-color: rgb(231, 231, 231, 0.7);
+      color: black;
+    }
+  }
+}
+
+input[type="range"] {
+  cursor: pointer;
+}
+
+input[type="range"]:disabled {
+  cursor: not-allowed;
+}

@@ -1,0 +1,9 @@
+.secondary-buttons {
+  display: flex;
+
+  button {
+    &:not(&:last-child) {
+      margin-right: 25px;
+    }
+  }
+}

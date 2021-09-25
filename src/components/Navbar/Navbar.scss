@@ -1,0 +1,18 @@
+.navbar {
+  overflow: hidden;
+  background-color: black;
+  color: white;
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    height: 40px;
+  }
+}

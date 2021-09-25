@@ -1,0 +1,9 @@
+.algorithms-list {
+  display: flex;
+
+  button {
+    &:not(&:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
